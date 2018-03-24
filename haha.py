@@ -1,7 +1,13 @@
-print('0000')
-a = b = c = 0
-for i in range(16):
-  b += 1
-  a += b ** 2
-  c += b ** 3
-  print(a, b, c)
+
+
+def tentotwo():
+	a = int(input('Decimal number:'))
+	c = ''
+	while a:
+		b = a % 2
+		c += str(b)
+		a = a // 2
+	c = c[::-1]
+	print('Binary number:%s' % c)
+
+tentotwo()
